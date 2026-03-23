@@ -372,7 +372,7 @@
                 <p>Whether you need a new website, a redesign, or custom functionality, let's collaborate to create
                     something amazing.
                 </p>
-                <form action="https://formsubmit.co/chintumewara816@gmail.com" method="POST" class="form-grid">
+                <!--    <form action="https://formsubmit.co/chintumewara816@gmail.com" method="POST" class="form-grid">
                     <ul>
                         <li><input type="text" placeholder="Full name"></li>
                         <li><input type="text" placeholder="Your Email"></li>
@@ -380,6 +380,21 @@
                         <li><input type="text" placeholder="Budget"></li>
                         <li><textarea placeholder="Message"></textarea></li>
                         <li><button class="btn">Submit Message</button></li>
+                    </ul>
+                </form> -->
+                <form action="https://formsubmit.co/chintumewara816@gmail.com" method="POST" class="form-grid">
+                    <ul>
+                        <li><input type="text" name="name" placeholder="Full name" required></li>
+                        <li><input type="email" name="email" placeholder="Your Email" required></li>
+                        <li><input type="text" name="phone" placeholder="Phone number"></li>
+                        <li><input type="text" name="budget" placeholder="Budget"></li>
+                        <li><textarea name="message" placeholder="Message" required></textarea></li>
+
+                        <!-- Optional Hidden Fields -->
+                        <input type="hidden" name="_subject" value="New Portfolio Message!">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <li><button type="submit" class="btn">Submit Message</button></li>
                     </ul>
                 </form>
             </div>
@@ -417,7 +432,7 @@
                         <li><a href="#form-sec">Contact us</a></li>
                         <li><a href="#project-sec">Projects</a></li>
                         <li><a href="#reviews-sec">Skills</a></li>
-                   
+
                     </ul>
                 </div>
                 <div class="col col3">
