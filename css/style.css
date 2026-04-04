@@ -882,12 +882,17 @@ p {
     .menus {
         position: absolute;
         left: 0;
-        top: 52px;
-        display: none;
+        top: -300px;
         padding: 3.2rem;
         background-color: var(--primary-color-dark);
         z-index: -1;
         width: 100%;
+        overflow: hidden;
+        transition: 0.3s ease;
+    }
+
+    .menus.open {
+        top: 52px;
     }
 
     .menus ul {
